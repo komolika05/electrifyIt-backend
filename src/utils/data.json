@@ -1,0 +1,92 @@
+[
+    {
+      "licenseType": "FE213KM",
+      "make": "BYD Auto",
+      "vin": "VIN 101",
+      "model": "Class 6F cab & chasis 2022",
+      "type": "Truck",
+      "date": "2024/03/01",
+      "milesDriven": 250
+    },
+    {
+      "licenseType": "FE220KM",
+      "make": "Tesla",
+      "vin": "VIN 102",
+      "model": "Semi Delivery Event, 2022",
+      "type": "Truck",
+      "date": "2024/03/02",
+      "milesDriven": 150
+    },
+    {
+      "licenseType": "PH218KM",
+      "make": "Ree",
+      "vin": "VIN 103",
+      "model": "P7 chasis cab 2023",
+      "type": "Van",
+      "date": "2024/03/02",
+      "milesDriven": 200
+    },
+    {
+      "licenseType": "NY220KM",
+      "make": "Nikola",
+      "vin": "VIN 104",
+      "model": "TRE BEV, 2022",
+      "type": "Truck",
+      "date": "2024/03/03",
+      "milesDriven": 220
+    },
+    {
+      "licenseType": "FE210KM",
+      "make": "GM Envolve",
+      "vin": "VIN 105",
+      "model": "Brightdrop zevo 600, 2022",
+      "type": "Van",
+      "date": "2024/03/04",
+      "milesDriven": 150
+    },
+    {
+      "licenseType": "FE210KM",
+      "make": "BYD Motors",
+      "vin": "VIN 106",
+      "model": "K7M '30 Transit Bus, 2021",
+      "type": "Bus",
+      "date": "2024/03/05",
+      "milesDriven": 150
+    },
+    {
+      "licenseType": "FE220KM",
+      "make": "Tesla",
+      "vin": "VIN 107",
+      "model": "Semi Delivery Event, 2022",
+      "type": "Truck",
+      "date": "2024/03/02",
+      "milesDriven": 150
+    },
+    {
+      "licenseType": "NY220KM",
+      "make": "Nikola",
+      "vin": "VIN 108",
+      "model": "TRE BEV, 2022",
+      "type": "Truck",
+      "date": "2024/03/03",
+      "milesDriven": 220
+    },
+    {
+      "licenseType": "FE210KM",
+      "make": "BYD Motors",
+      "vin": "VIN 109",
+      "model": "K7M 30 Transit Bus, 2021",
+      "type": "Bus",
+      "date": "2024/03/05",
+      "milesDriven": 150
+    },
+    {
+      "licenseType": "FE213KM",
+      "make": "BYD Auto",
+      "vin": "VIN 110",
+      "model": "Class 6F cab & chasis 2022",
+      "type": "Truck",
+      "date": "2024/03/01",
+      "milesDriven": 250
+    }
+  ] 
