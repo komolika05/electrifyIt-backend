@@ -6,11 +6,17 @@ const reports = {
     const toDate = req.query.toDate;
 
     const reportsModel = getReports();
-        
-    
 
-    console.log(req);
-    return res.status(200).json({ data: [{ message: "hello" }] });
+    const query = {};
+
+    if (fromDate && toDate) {
+      query.date = { $gte: fromDate };
+      query.date = { $lte: toDate };
+    }
+
+    const result = await reportsModel.find(query).toArray();
+
+    return res.status(200).json(result);
   },
 };
 
