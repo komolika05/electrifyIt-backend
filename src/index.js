@@ -25,7 +25,7 @@ app.use(express.json());
   }
 })();
 
-app.get("/reports", reports.get);
+app.get("/api/reports", reports.get);
 
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
