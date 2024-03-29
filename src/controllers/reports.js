@@ -18,8 +18,7 @@ const reports = {
     const query = {};
 
     if (fromDate && toDate) {
-      query.Date = { $gte: fromDate };
-      query.Date = { $lte: toDate };
+      query.Date = { $gte: fromDate, $lte: toDate };
     }
 
     const result = await reportsModel.find(query).toArray();
@@ -28,13 +27,8 @@ const reports = {
 
     let rows;
     if (frequency === "daily") {
-      rows = result.map((element) => {
-        delete element._id;
-        const elementArray = Object.values(element);
-        return elementArray;
-      });
-
       reportLabels = [
+        "No. ",
         "License Plate",
         "Make",
         "VIN",
@@ -43,6 +37,12 @@ const reports = {
         "Date",
         "Miles Driven",
       ];
+
+      rows = result.map((element, index) => {
+        delete element._id;
+        const elementArray = Object.values(element);
+        return [index + 1, ...elementArray];
+      });
     } else {
       // aggregate rows and report lables accordingly
       reportLabels = ["Frequency Range", "Total Miles Driven"];
