@@ -4,7 +4,7 @@ let db;
 
 async function init() {
   const client = await getClient({ URL: "mongodb://0.0.0.0:27017/" });
-  db = client.db("electryIt");
+  db = client.db("electryIt-db");
 }
 
 async function getClient({ URL }) {

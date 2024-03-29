@@ -2,7 +2,7 @@ const { getDB } = require("../db/mongo");
 
 function getReports() {
   const db = getDB();
-  const reportsCollection = db.collection("reports");
+  const reportsCollection = db.collection("report");
   return reportsCollection;
 }
 

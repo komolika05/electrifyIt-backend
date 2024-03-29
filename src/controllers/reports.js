@@ -10,13 +10,28 @@ const reports = {
     const query = {};
 
     if (fromDate && toDate) {
-      query.date = { $gte: fromDate };
-      query.date = { $lte: toDate };
+      query.Date = { $gte: fromDate };
+      query.Date = { $lte: toDate };
     }
 
     const result = await reportsModel.find(query).toArray();
+    const reportLabels = [
+      "License Plate",
+      "Make",
+      "VIN",
+      "Model",
+      "Type",
+      "Date",
+      "Miles Driven",
+    ];
 
-    return res.status(200).json(result);
+    const rows= result.map((element) => {
+      delete element._id;
+      const elementArray = Object.values(element)
+      return elementArray
+    })
+
+    return res.status(200).json({ columns: reportLabels, rows });
   },
 };
 
