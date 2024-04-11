@@ -1,4 +1,4 @@
-const reportsData = require("./data.json");
+const reportsData = require("./data.js");
 const { getReports } = require("./../models/reports");
 
 async function seedInitialData() {
@@ -15,4 +15,3 @@ async function seedInitialData() {
 }
 
 module.exports = seedInitialData;
-
